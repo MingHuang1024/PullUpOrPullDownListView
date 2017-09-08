@@ -1,3 +1,4 @@
 # PullUpOrPullDownListView
 A simple custom ListView that can pull up or pull down load more data
-简单的可上拉加载更多、下拉加载更多的Listview
+
+绠�鍗曠殑鍙笂鎷夊姞杞芥洿澶氥�佷笅鎷夊姞杞芥洿澶氱殑Listview
