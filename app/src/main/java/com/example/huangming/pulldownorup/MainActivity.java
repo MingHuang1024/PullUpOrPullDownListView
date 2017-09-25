@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
         data.add("A");
         data.add("B");
         data.add("C");
-        final CcbPullDownOrUpListView lvPullDownOrUp = (CcbPullDownOrUpListView) findViewById(R.id
+        final PullDownOrUpListView lvPullDownOrUp = (PullDownOrUpListView) findViewById(R.id
             .lvPullDownOrUp);
         lvPullDownOrUp.setPullUpEnabled(false);
         lvPullDownOrUp.setPullDownEnabled(false);
@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
         lvPullDownOrUp.setPullUpEnabled(true);
         lvPullDownOrUp.setPullDownEnabled(true);
         // lvPullDownOrUp.setPullDownEnabled(false);
-        lvPullDownOrUp.setLoadMoreListener(new CcbPullDownOrUpListView.LoadMoreListener() {
+        lvPullDownOrUp.setLoadMoreListener(new PullDownOrUpListView.LoadMoreListener() {
             @Override
             public void onLoadMoreFromTop() {
                 System.out.println("顶部。。。");

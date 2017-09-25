@@ -11,12 +11,12 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"/>
 
-    <com.example.huangming.pulldownorup.CcbPullDownOrUpListView
+    <com.example.huangming.pulldownorup.PullDownOrUpListView
         android:id="@+id/lvPullDownOrUp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="20dp">
 
-    </com.example.huangming.pulldownorup.CcbPullDownOrUpListView>
+    </com.example.huangming.pulldownorup.PullDownOrUpListView>
 
 </LinearLayout>
