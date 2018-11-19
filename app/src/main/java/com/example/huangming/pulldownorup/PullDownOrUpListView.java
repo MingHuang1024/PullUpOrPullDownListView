@@ -123,6 +123,10 @@ public class PullDownOrUpListView extends ListView {
             @Override
             public void onScrollStateChanged(AbsListView absListView, int scrollState) {
                 // 下拉到顶部，进行更新
+                if (isLoading) {
+                    return;
+                }
+
                 if (scrollState == OnScrollListener.SCROLL_STATE_IDLE && pullDownEnabled
                     && absListView.getFirstVisiblePosition() == 0) {
                     View topChild = absListView.getChildAt(0);
@@ -156,6 +160,10 @@ public class PullDownOrUpListView extends ListView {
             @Override
             public void onScroll(AbsListView mListView, int firstVisibleItem, int visibleItemCount,
                                  int totalItemCount) {
+                if (isLoading) {
+                    return;
+                }
+
                 if ((firstVisibleItem + visibleItemCount) == totalItemCount) {
                     View lastVisibleItemView = mListView.getChildAt(
                         mListView.getChildCount() - 1);
